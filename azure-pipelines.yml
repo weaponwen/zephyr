@@ -11,5 +11,7 @@ pool:
 
 steps:
 - script: |
+    pip3 install --user -r zephyr/scripts/requirements.txt
+    source zephyr-env.sh
     make
   displayName: 'make'
